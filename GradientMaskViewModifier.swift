@@ -13,8 +13,7 @@ struct GradientMaskViewModifier: ViewModifier {
     
     func body(content: Content) -> some View {
         content
-            .foregroundColor(.clear)
-            .background {
+            .overlay {
                 LinearGradient(colors: animatedColors,
                                startPoint: .leading,
                                endPoint: .trailing)
