@@ -44,7 +44,7 @@ struct GradientMaskPreview: View {
         Text("Tap to randomize")
             .gradientMask(colors: $gradientColors)
             .onTapGesture {
-                self.gradientColors = [.random, .random]
+                gradientColors = [.random, .random]
             }
     }
 }
