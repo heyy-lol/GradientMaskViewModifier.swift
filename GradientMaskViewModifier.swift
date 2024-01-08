@@ -38,7 +38,7 @@ extension View {
 
 // MARK: - Preview
 
-struct GradientMaskPreviewContainer: View {
+struct GradientMaskPreview: View {
     @State private var gradientColors: [Color] = [.random, .random]
     
     var body: some View {
@@ -52,5 +52,5 @@ struct GradientMaskPreviewContainer: View {
 
 
 #Preview {
-    GradientMaskPreviewContainer()
+    GradientMaskPreview()
 }
